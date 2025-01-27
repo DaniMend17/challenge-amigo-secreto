@@ -1,7 +1,7 @@
 let amigos = [];
 let amigo = document.querySelector('.input-name');
 let listaAmigos = document.getElementById('listaAmigos');
-let amigoSecreto = document.getElementById('resultado')
+let amigoSecreto = document.getElementById('resultado');
 
 function agregarAmigo(){
     if (validaNombre(amigo.value.trim())) {
@@ -20,7 +20,7 @@ function sortearAmigo(){
         amigoSecreto.innerHTML = `<li> El amigo secreto sorteado es:
          ${amigos.length > 1? amigos[eligeAmigoSecreto()]: amigos[0]} </li>`;
     }else{
-        alert('Por favor añade un amigo antes de sortear.')
+        alert('Por favor añade un amigo antes de sortear.');
     }
 }
 
